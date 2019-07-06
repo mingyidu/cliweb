@@ -19,7 +19,7 @@ export default new Router({
       component: ShowSome
     },
     {
-      path: '/ggser',
+      path: '/gggser',
       name: 'User',
       component: User
     }
