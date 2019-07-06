@@ -14,11 +14,6 @@ export default new Router({
       component: HelloWorld
     },
     {
-      path: '/gui',
-      name: 'gui',
-      component: gui
-    },
-    {
       path: '/show',
       name: 'ShowSome',
       component: ShowSome
