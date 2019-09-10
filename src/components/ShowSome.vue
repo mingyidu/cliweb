@@ -13,16 +13,15 @@ export default {
     }
   },
   methods: {
-	  say_hello () {
-		  alert('hello us')
-	  }
+    say_hello () {
+      alert('hello us')
+    }
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
 .hello {
   text-align: center;
 }

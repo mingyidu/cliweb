@@ -1,3 +1,4 @@
+/* eslint-disable no-mixed-spaces-and-tabs */
 // For authoring Nightwatch tests, see
 // http://nightwatchjs.org/guide#usage
 
@@ -9,11 +10,13 @@ module.exports = {
     const devServer = browser.globals.devServerURL
 
     browser
+	  .maximizeWindow()
       .url(devServer)
-      .waitForElementVisible('#app', 5000)
+      .waitForElementVisible('#app', 1000)
       .assert.elementPresent('.hello')
       .assert.containsText('h1', 'Welcome to Your Vue.js App')
-      .assert.elementCount('img', 1)
-      .end()
+	  .assert.elementCount('img', 1)
+	  .click('#show,#user')
+	  .end()
   }
 }
